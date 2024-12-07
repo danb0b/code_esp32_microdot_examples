@@ -13,7 +13,7 @@ import network
 AP = False
 
 if AP:
-    ssid = '***REMOVED***' # Change this if you are working in a classroom
+    ssid = 'my-esp' # Change this if you are working in a classroom
     password = ''
     station = network.WLAN(network.AP_IF)
     station.active(True)
@@ -26,8 +26,8 @@ if AP:
 
 else:   
 
-    MY_SSID = '***REMOVED***' 
-    MY_PW = '***REMOVED***'
+    MY_SSID = '<insert-your-ssid-here>' 
+    MY_PW = '<your-password>'
 
     station = network.WLAN(network.STA_IF)
     station.active(True)
